@@ -1,0 +1,431 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    
+}
+
+#main{
+
+}
+
+.text-white{
+    color: #bdbdbd !important;
+}
+
+
+@font-face {
+    font-family:longdeptrai ;
+    src: url(../font/Montserrat-Medium.ttf);
+
+}
+
+@font-face {
+    font-family: lato-regular;
+    src: url(../font/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: lato-light;
+    src: url(../font/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: lato-in-nghieng;
+    src: url(../font/Lato-Italic.ttf);
+}
+
+@font-face {
+    font-family: lato-in-dam;
+    src: url(../font/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: lato-light-italic;
+    src: url(../font/Lato-LightItalic.ttf);
+}
+
+#header{
+    background-color: #2d2d30;
+    height: 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    opacity: 0.9;
+    font-family: longdeptrai;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li{
+    display: inline-block;
+    float: right;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a{
+    text-decoration: none;
+    color: #d5d5d5;
+    line-height: 50px;
+    padding: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+#nav .arrowdown{
+    size: 16px;
+}
+
+#header .search-icon{
+    float: right;
+    color: #d5d5d5;
+    padding: 18px 15px 15px 15px;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#header .search-icon:hover{
+    color: #fff;
+}
+
+#nav > li:hover > a{
+    color: #fff;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 50px;
+    padding: 15px;
+    letter-spacing: 4px;
+}
+
+
+#nav li:hover .subnav{
+    display: block;
+} 
+
+#nav .subnav{
+   position: absolute;
+   background-color: #fff;
+   border-radius: 0px 0px 4px 4px;
+   background-clip: padding-box;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+   display: none;
+   padding: 5px;
+   border: 1px;
+   right: 0;
+}
+
+#nav .subnav a{
+    color: black;
+    letter-spacing: 4px;
+    padding: 3px 20px;
+    line-height:  20px;  
+    display:block;
+}
+
+#nav .subnav a:hover{
+    background-color: red;
+}
+#slider{
+    margin-top: 0px;
+    padding-top: 50%;
+    background: url(../img/slider/img1.jpg) top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 56px;
+    left: 50%;
+    color: #ffffff;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading{
+    letter-spacing: 10px;
+    font-size: 20px;
+    font-family: lato-regular;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    font-family: lato-light;
+}
+
+#content{}
+    
+   
+#content #phanmodau{
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0 auto;
+}
+
+#phanmodau .phandau{
+    font-size: 20px;
+    font-family: longdeptrai;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 80px;
+}
+#phanmodau .phanslogan{
+    font: 15px;
+    font-family: lato-in-nghieng;
+    text-align: center ;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+#phanmodau .phanmieuta{
+    font-size: 15px;
+    font-family:lato-regular ;
+    opacity: 0.7;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0 120px 0 120px;
+    margin: 0 25.5px 0 25.5px;
+}
+
+#content .member-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 48px;
+    justify-content: space-around;
+    opacity: 0.7;
+}
+
+#content .member-name{
+    text-align: center;
+    font-size: 15px;
+    font-family:lato-in-dam;
+    margin-bottom: 50px;
+}
+
+#content .member-img{
+    width: 180px;
+    border-radius: 50%;
+}
+
+.tour-section{
+    background-color: #2d2d30;
+    margin-top: 120px;
+    height: 1000px;
+    padding: 80px 189px 80px 189px;
+}
+
+.ticket-list{
+   background-color: #fff;
+   list-style-type: none;
+   margin-top: 40px;
+   font-family: lato-in-dam;
+}
+
+.ticket-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.ticket-list .sold-out{
+    background-color: #d9534f;
+    padding: 2.250px 6.750px;
+    border-radius: 10%;
+}
+
+.ticket-list .quantity{
+    background-color: #777777;
+    color: #fff;
+    font-size: 12px;
+    height: 18px;
+    width: 21px;
+    border-radius: 45%;
+    float: right;
+    text-align: center;
+    line-height: 17px;
+    margin-top: 4px;
+}
+
+.places-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.buy-ticket{
+    padding: 0 15px;
+    margin-top: 28px;
+}
+.place-img{
+    width: 100%;
+    background-color: #fff;
+    display: block;
+}
+.place-body{
+    background-color: #fff;
+    text-align: center;
+    padding: 16px;
+}
+.place-name{
+    font-family: lato-in-dam ;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.8;
+}
+.date{
+    font-family: lato-regular;
+    font-style: italic;
+    font-size: 15px;
+    margin: 10px 0 16px 0;
+    opacity: 0.9;
+}
+
+.place-buy-btn{
+    font-family: lato-regular ;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #f1f1f1;
+}
+
+.place-buy-btn:hover , .btn-send:hover{
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #000;
+}
+
+
+
+#phanmodau{
+   
+}
+
+.the-cha{
+    padding-left: 189px;
+    padding-right: 189px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact{
+    width: 30%; 
+    font-size: 15px;
+    color: #777; 
+    font-family: lato-in-dam;
+}
+
+.form{
+    width: 70%;  
+}
+
+.col-6{
+    margin: 0;
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+input {
+   height: 34px;
+}
+
+input:focus{
+    outline: none;
+
+}
+
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col{
+    margin-top: 15px;
+}
+
+.btn-send{
+    float: right;
+    background-color: #333;
+    color: #f1f1f1;
+    padding:10px 12px;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: lato-in-dam;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.form-controlz{
+    width: 100%;
+    resize: none;
+}
+
+.form-control:focus{
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow:  0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+}
+
+.form-control{ 
+   padding: 6px 12px;
+   width: 100%;
+   color: #555;
+   font-size: 14px;
+   border: 1px solid #ccc;
+}
+
+.mapz{
+    max-width: 100%;
+    margin-top: 80px;
+}
+
+
+#footer{
+    height: 180px;
+    background-color: #2d2d30;
+    margin-top: -4px;
+
+}
+
+.footerr{
+    text-align: center;
+    padding: 32px;
+}
+
+
+    
+
+
+.footerzz{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerzzz{
+    color: #f5f5f5;
+    text-decoration: none;
+    font-family: lato-in-dam;
+    margin-top: 32px;
+}
+
+.footer a:hover{
+    color: #fff;
+}
+
